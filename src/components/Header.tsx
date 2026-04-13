@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X, Download } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import profileImg from "@/assets/angela-profile.jpg";
 
 const navItems = [
   { label: "Home", path: "/" },
@@ -19,7 +20,8 @@ const Header = () => {
   return (
     <header className="sticky top-0 z-50 bg-card/95 backdrop-blur border-b">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
-        <Link to="/" className="font-serif text-xl font-bold text-foreground tracking-tight">
+        <Link to="/" className="flex items-center gap-2.5 font-serif text-xl font-bold text-foreground tracking-tight">
+          <img src={profileImg} alt="Angela Cacciarru" className="w-9 h-9 rounded-full object-cover border-2 border-accent/40" />
           Angela <span className="text-gold">Cacciarru</span>
         </Link>
 
