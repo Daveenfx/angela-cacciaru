@@ -1,5 +1,6 @@
 import SectionHeading from "@/components/SectionHeading";
 import CtaBanner from "@/components/CtaBanner";
+import profileImg from "@/assets/angela-profile.jpg";
 
 const About = () => (
   <div>
@@ -7,12 +8,25 @@ const About = () => (
       <div className="container mx-auto px-4 max-w-4xl">
         <SectionHeading title="Professional Background" subtitle="A career dedicated to environmental stewardship, regulatory compliance, and international development." />
 
+        <div className="flex flex-col md:flex-row gap-10 mb-12">
+          <img
+            src={profileImg}
+            alt="Angela Cacciarru"
+            className="w-48 h-48 rounded-full object-cover border-4 border-accent/40 shadow-lg flex-shrink-0 mx-auto md:mx-0"
+          />
+          <div className="prose prose-lg max-w-none space-y-6 text-muted-foreground">
+            <p>
+              Angela Cacciarru is a Senior Environmental & Historic Compliance Specialist with over 30 years of distinguished experience spanning U.S. federal agencies, international organizations, and academia. Her career reflects a deep commitment to environmental protection, historic preservation, and sustainable development.
+            </p>
+            <p>
+              Currently serving as a Historic Preservation Specialist at the Federal Emergency Management Agency (FEMA), Angela has conducted environmental and historic compliance reviews for more than 200 federally funded projects under critical frameworks including NEPA, NHPA, ESA, CWA, and CZMA.
+            </p>
+          </div>
+        </div>
+
         <div className="prose prose-lg max-w-none space-y-6 text-muted-foreground">
           <p>
-            Angela Cacciarru is a Senior Environmental & Historic Compliance Specialist with over 30 years of distinguished experience spanning U.S. federal agencies, international organizations, and academia. Her career reflects a deep commitment to environmental protection, historic preservation, and sustainable development.
-          </p>
-          <p>
-            Currently serving as a Historic Preservation Specialist at the Federal Emergency Management Agency (FEMA), Angela has conducted environmental and historic compliance reviews for more than 200 federally funded projects under critical frameworks including NEPA, NHPA, ESA, CWA, and CZMA. She has developed standardized procedures for project analysis and site inspections, significantly improving efficiency across compliance documentation workflows.
+            She has developed standardized procedures for project analysis and site inspections, significantly improving efficiency across compliance documentation workflows.
           </p>
           <p>
             Her international experience includes service as a Project Coordinator and Environmental Compliance Advisor with UNDP/UNESCO in South Africa and Mozambique, where she implemented the Solar Villages Development Program benefiting over 100 community members. She also directed a multinational research initiative across Portugal and Italy, coordinating 14 international researchers on sustainable land management practices.

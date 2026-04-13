@@ -90,21 +90,21 @@ const Experience = () => (
           subtitle="A track record of progressive leadership across federal agencies, international organizations, and academia."
         />
 
-        <div className="space-y-10">
+        <div className="space-y-8">
           {roles.map((role, i) => (
             <div key={i} className="relative pl-8 border-l-2 border-accent/30">
               <div className="absolute left-[-7px] top-1 w-3 h-3 rounded-full bg-accent" />
-              <div className="p-6 rounded-lg border bg-card hover:shadow-md transition-shadow">
-                <h3 className="font-serif text-xl font-bold text-foreground mb-1">{role.title}</h3>
-                <div className="flex flex-wrap gap-x-5 gap-y-1 text-sm text-muted-foreground mb-4">
-                  <span className="flex items-center gap-1"><Briefcase className="w-3.5 h-3.5" />{role.org}</span>
-                  <span className="flex items-center gap-1"><MapPin className="w-3.5 h-3.5" />{role.location}</span>
-                  <span className="flex items-center gap-1"><Calendar className="w-3.5 h-3.5" />{role.period}</span>
+              <div className="p-6 md:p-8 rounded-lg border bg-card hover:shadow-md transition-shadow">
+                <h3 className="font-serif text-xl font-bold text-foreground mb-2">{role.title}</h3>
+                <div className="flex flex-wrap gap-x-5 gap-y-2 text-sm text-muted-foreground mb-5">
+                  <span className="flex items-center gap-1.5"><Briefcase className="w-4 h-4 text-accent" />{role.org}</span>
+                  <span className="flex items-center gap-1.5"><MapPin className="w-4 h-4 text-accent" />{role.location}</span>
+                  <span className="flex items-center gap-1.5"><Calendar className="w-4 h-4 text-accent" />{role.period}</span>
                 </div>
-                <ul className="space-y-2">
+                <ul className="space-y-3">
                   {role.points.map((p, j) => (
-                    <li key={j} className="flex items-start gap-2 text-sm text-muted-foreground">
-                      <span className="w-1.5 h-1.5 rounded-full bg-accent mt-1.5 flex-shrink-0" />
+                    <li key={j} className="flex items-start gap-3 text-sm leading-relaxed text-muted-foreground">
+                      <span className="w-1.5 h-1.5 rounded-full bg-accent mt-2 flex-shrink-0" />
                       {p}
                     </li>
                   ))}
