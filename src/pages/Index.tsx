@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "react-router-dom";
 import CtaBanner from "@/components/CtaBanner";
 import profileImg from "@/assets/angela-profile.jpg";
+import ConstellationBackground from "@/components/ConstellationBackground";
 
 const highlights = [
   { icon: Shield, label: "30+ Years", desc: "Environmental & Historic Compliance" },
@@ -14,34 +15,32 @@ const Index = () => (
   <div>
     {/* Hero */}
     <section className="hero-gradient text-primary-foreground relative overflow-hidden">
-      <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_30%_20%,hsl(38_70%_55%/0.08),transparent_60%)]" />
+      <ConstellationBackground />
       <div className="container mx-auto px-4 py-24 md:py-36 relative z-10">
-        <div className="flex flex-col md:flex-row items-center gap-10 md:gap-16">
+        <div className="flex flex-col items-center text-center">
           <img
             src={profileImg}
             alt="Angela Cacciarru"
-            className="w-40 h-40 md:w-52 md:h-52 rounded-full object-cover border-4 border-accent/40 shadow-lg flex-shrink-0"
+            className="w-40 h-40 md:w-52 md:h-52 rounded-full object-cover border-4 border-accent/40 shadow-lg mb-8"
           />
-          <div className="max-w-3xl animate-slide-up text-center md:text-left">
-            <p className="text-gold font-medium tracking-wider text-sm uppercase mb-4">Senior Environmental & Historic Compliance Specialist</p>
-            <h1 className="font-serif text-4xl md:text-6xl font-bold leading-tight mb-6">
-              Angela Cacciarru
-            </h1>
-            <p className="text-primary-foreground/80 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
-              Expert in NEPA, NHPA, ESA, and federal regulatory frameworks with a proven track record across U.S. agencies and international organizations including the United Nations.
-            </p>
-            <div className="flex flex-wrap gap-4 justify-center md:justify-start">
-              <a href="/Angela_Cacciarru_Resume.pdf" download>
-                <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 gap-2">
-                  <Download className="w-4 h-4" /> Download CV
-                </Button>
-              </a>
-              <Link to="/experience">
-                <Button size="lg" variant="outline" className="border-primary-foreground/30 text-primary-foreground hover:bg-primary-foreground/10 gap-2">
-                  View Experience <ArrowRight className="w-4 h-4" />
-                </Button>
-              </Link>
-            </div>
+          <p className="text-gold font-medium tracking-wider text-sm uppercase mb-4">Senior Environmental & Historic Compliance Specialist</p>
+          <h1 className="font-serif text-4xl md:text-6xl font-bold leading-tight mb-6">
+            Angela Cacciarru
+          </h1>
+          <p className="text-primary-foreground/80 text-lg md:text-xl leading-relaxed mb-8 max-w-2xl">
+            Expert in NEPA, NHPA, ESA, and federal regulatory frameworks with a proven track record across U.S. agencies and international organizations including the United Nations.
+          </p>
+          <div className="flex flex-wrap gap-4 justify-center">
+            <a href="/Angela_Cacciarru_Resume.pdf" download>
+              <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 gap-2">
+                <Download className="w-4 h-4" /> Download CV
+              </Button>
+            </a>
+            <Link to="/experience">
+              <Button size="lg" variant="outline" className="border-accent/50 text-accent hover:bg-accent/10 gap-2">
+                View Experience <ArrowRight className="w-4 h-4" />
+              </Button>
+            </Link>
           </div>
         </div>
       </div>
