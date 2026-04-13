@@ -12,8 +12,20 @@ export default {
         "2xl": "1400px",
       },
     },
+    fontFamily: {
+      sans: ['Inter', 'system-ui', 'sans-serif'],
+      serif: ['Playfair Display', 'Georgia', 'serif'],
+    },
     extend: {
       colors: {
+        gold: {
+          DEFAULT: "hsl(38 70% 55%)",
+          light: "hsl(40 60% 92%)",
+        },
+        navy: {
+          DEFAULT: "hsl(220 40% 15%)",
+          light: "hsl(220 30% 25%)",
+        },
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
