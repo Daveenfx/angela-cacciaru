@@ -21,6 +21,12 @@ const Index = () => (
           <img
             src={profileImg}
             alt="Angela Cacciarru"
+            loading="eager"
+            decoding="async"
+            // @ts-ignore
+            fetchpriority="high"
+            width={208}
+            height={208}
             className="w-40 h-40 md:w-52 md:h-52 rounded-full object-cover border-4 border-accent/40 shadow-lg mb-8"
           />
           <p className="text-gold font-medium tracking-wider text-sm uppercase mb-4">Senior Environmental & Historic Compliance Specialist</p>
