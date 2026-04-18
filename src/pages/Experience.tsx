@@ -7,7 +7,7 @@ const roles = [
     title: "Historic Preservation Specialist (HSSP)",
     org: "Federal Emergency Management Agency (FEMA)",
     location: "Lake Mary / Tampa, FL",
-    period: "2003 – Present",
+    period: "08/2023 – Present",
     points: [
       "Conducted environmental and historic compliance reviews for 200+ federally funded projects under NEPA, NHPA, ESA, CWA, and CZMA",
       "Ensured regulatory compliance with federal environmental laws and Executive Orders",
