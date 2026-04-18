@@ -21,7 +21,7 @@ const Header = () => {
     <header className="sticky top-0 z-50 bg-card/95 backdrop-blur border-b">
       <div className="container mx-auto flex items-center justify-between h-16 px-4">
         <Link to="/" className="flex items-center gap-2.5 font-serif text-xl font-bold text-foreground tracking-tight">
-          <img src={profileImg} alt="Angela Cacciarru" className="w-9 h-9 rounded-full object-cover border-2 border-accent/40" />
+          <img src={profileImg} alt="Angela Cacciarru" loading="eager" decoding="async" width={36} height={36} className="w-9 h-9 rounded-full object-cover border-2 border-accent/40" />
           Angela <span className="text-gold">Cacciarru</span>
         </Link>
 
